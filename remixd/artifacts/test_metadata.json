@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "SafeMint",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test.sol": "test"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test.sol": {
+			"keccak256": "0x2d3b3eef238c6cff2d1704bc7851bf06f66ecba93ab246f48036cb5166783e9b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cd703277ba7b29fc3f42496337405e06f1826b7e37aace00c72579f9c2d848bd",
+				"dweb:/ipfs/QmYgGYP3ZXNhv5dhZeymLR8zHfE1PwCr8CcFDuWARQiF21"
+			]
+		}
+	},
+	"version": 1
+}

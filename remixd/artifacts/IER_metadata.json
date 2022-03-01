@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Fuckme",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test.sol": "IER"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test.sol": {
+			"keccak256": "0xc20e0f7ca1e9e189f4b4c6ef7a713ab32eada73384371f08a223b25b025c11ef",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7da623f44a9cdefbdeb053f6d137c13bbbdebafea400c731fd2e5bdef4fd5f35",
+				"dweb:/ipfs/QmdC7uFRnwoi6oSwVocPzAkDerByUpZr4SuvHjQj9ACDRJ"
+			]
+		}
+	},
+	"version": 1
+}

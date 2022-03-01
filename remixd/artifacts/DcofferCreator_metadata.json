@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "SafeMint",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test.sol": "DcofferCreator"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test.sol": {
+			"keccak256": "0x989636e8191aa9e38901e95f31361051cf93213958167c9c034ac2239ef7fcd8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c197ab7970487a1d9a9fd7e9e9cce759cf82d1ca5e3bf4ebba3700f1f528e50f",
+				"dweb:/ipfs/QmNM7tN6diizUH5zL4PbrGJLsbuoT2HwWb5nnohsTJSAD2"
+			]
+		}
+	},
+	"version": 1
+}
