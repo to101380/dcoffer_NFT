@@ -966,7 +966,9 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
 
     uint private _totalPower;
 
-    uint private _DCFperblock;     
+    uint private _DCFperblock; 
+
+    uint private _Capacity;    
 
     // Token name
     string private _name;
@@ -1002,6 +1004,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
         _symbol = symbol_;
         _totalPower = 60359e18;
         _DCFperblock = 2e18;
+        _Capacity = block.number.add(1050000000);
     }
 
     /**
@@ -1307,7 +1310,14 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
   
 
     function powerSquare(address owner)public view returns(uint){
-        uint blockDifferent = block.number .sub(_lastblock[owner]);
+
+        uint nowblock = block.number;
+
+        if(nowblock > _Capacity){
+            nowblock = _Capacity;
+        }
+
+        uint blockDifferent = nowblock.sub(_lastblock[owner]);
         uint square = _DCFperblock.mul(blockDifferent);
         square = square.mul(_powerBalances[owner]).div(_totalPower);
         uint reward = _powerSquare[owner].add(square);
@@ -1657,6 +1667,8 @@ contract Dcoffer is ERC721, ERC721URIStorage, ERC721Burnable, _ERC721Enumerable 
     function _burn(uint256 tokenId) internal override(ERC721, ERC721URIStorage) {          
         super._burn(tokenId);      
     }
+
+    
 
 
 
