@@ -938,6 +938,9 @@ interface IERC721Metadata is IERC721 {
     function tokenURI(uint256 tokenId) external view returns (string memory);
 }
 
+
+
+
 // File: @openzeppelin/contracts/token/ERC721/ERC721.sol
 
 
@@ -946,9 +949,9 @@ interface IERC721Metadata is IERC721 {
 pragma solidity ^0.8.0;
 
 
-
-
-
+interface IERC20 {      
+    function transfer(address to, uint256 amount) external returns (bool);
+}
 
 
 
@@ -961,6 +964,8 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
     using Address for address;
     using Strings for uint256;
     using SafeMath for uint;
+
+    IERC20 dcf = IERC20(address(0xbc1ADfF2EAC8dbA22d382DFADDf7e6B73aBC2334));
 
     uint private _baseNumber; 
 
@@ -1325,6 +1330,14 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
     }
 
 
+    function claim()external{
+        uint reward = powerSquare(msg.sender);
+        dcf.transfer(msg.sender,reward);
+        _powerSquare[msg.sender] = 0;
+        _lastblock[msg.sender] = block.number;
+    }
+
+
 
     
 
@@ -1606,11 +1619,7 @@ abstract contract _ERC721Enumerable is ERC721Enumerable{
 }
 
 
-interface IERC20 {   
-    function totalSupply() external view returns (uint256);
-    function balanceOf(address account) external view returns (uint256);
-    function transfer(address to, uint256 amount) external returns (bool);
-}
+
 
 
 // File: ERC721.sol
@@ -1668,7 +1677,7 @@ contract Dcoffer is ERC721, ERC721URIStorage, ERC721Burnable, _ERC721Enumerable 
         super._burn(tokenId);      
     }
 
-    
+
 
 
 

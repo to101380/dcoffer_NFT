@@ -54,6 +54,7 @@
 			"approve(address,uint256)": "095ea7b3",
 			"balanceOf(address)": "70a08231",
 			"burn(uint256)": "42966c68",
+			"claim()": "4e71d92d",
 			"dcofferPower(uint256)": "ea6724e5",
 			"getApproved(uint256)": "081812fc",
 			"isApprovedForAll(address,address)": "e985e9c5",
@@ -254,6 +255,13 @@
 				}
 			],
 			"name": "burn",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "claim",
 			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"
