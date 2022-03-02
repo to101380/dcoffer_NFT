@@ -49,19 +49,17 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"_lastblock(address)": "26d12ff2",
-			"_powerSquare(address)": "d6049a85",
 			"approve(address,uint256)": "095ea7b3",
 			"balanceOf(address)": "70a08231",
 			"claim()": "4e71d92d",
 			"dcofferPower(uint256)": "ea6724e5",
 			"getApproved(uint256)": "081812fc",
 			"isApprovedForAll(address,address)": "e985e9c5",
+			"mineStatus(address)": "33a22571",
 			"name()": "06fdde03",
 			"owner()": "8da5cb5b",
 			"ownerOf(uint256)": "6352211e",
 			"powerBalances(address)": "539313b8",
-			"powerSquare(address)": "fb2fc0af",
 			"renounceOwnership()": "715018a6",
 			"safeTransferFrom(address,address,uint256)": "42842e0e",
 			"safeTransferFrom(address,address,uint256,bytes)": "b88d4fde",
@@ -174,44 +172,6 @@
 			"inputs": [
 				{
 					"internalType": "address",
-					"name": "",
-					"type": "address"
-				}
-			],
-			"name": "_lastblock",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "",
-					"type": "address"
-				}
-			],
-			"name": "_powerSquare",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
 					"name": "to",
 					"type": "address"
 				},
@@ -315,6 +275,25 @@
 			"type": "function"
 		},
 		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "owner",
+					"type": "address"
+				}
+			],
+			"name": "mineStatus",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
 			"inputs": [],
 			"name": "name",
 			"outputs": [
@@ -368,25 +347,6 @@
 				}
 			],
 			"name": "powerBalances",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "owner",
-					"type": "address"
-				}
-			],
-			"name": "powerSquare",
 			"outputs": [
 				{
 					"internalType": "uint256",

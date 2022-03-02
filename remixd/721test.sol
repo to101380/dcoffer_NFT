@@ -965,7 +965,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
     using Strings for uint256;
     using SafeMath for uint;
 
-    IERC20 dcf = IERC20(address(0xbc1ADfF2EAC8dbA22d382DFADDf7e6B73aBC2334));
+    IERC20 dcf = IERC20(address(0xC77f56De066fE50C3e1564bA1cec85aC0aD663cE));
 
     uint private _baseNumber; 
 
@@ -994,9 +994,9 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
 
     mapping(address => uint)private _powerBalances;
 
-    mapping(address => uint)public _powerSquare;
+    mapping(address => uint)private _powerSquare;
 
-    mapping(address => uint)public _lastblock;
+    mapping(address => uint)private _lastblock;
 
     // Mapping from owner to operator approvals
     mapping(address => mapping(address => bool)) private _operatorApprovals;
@@ -1308,13 +1308,13 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
             _lastblock[owner] = block.number;
         }
 
-        _powerSquare[owner] = powerSquare(owner);
+        _powerSquare[owner] = mineStatus(owner);
         _lastblock[owner] = block.number;
     }
 
   
 
-    function powerSquare(address owner)public view returns(uint){
+    function mineStatus(address owner)public view returns(uint){
 
         uint nowblock = block.number;
 
@@ -1331,7 +1331,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
 
 
     function claim()external{
-        uint reward = powerSquare(msg.sender);
+        uint reward = mineStatus(msg.sender);
         dcf.transfer(msg.sender,reward);
         _powerSquare[msg.sender] = 0;
         _lastblock[msg.sender] = block.number;
@@ -1694,13 +1694,7 @@ contract Dcoffer is ERC721, ERC721URIStorage, ERC721Burnable, _ERC721Enumerable 
         }
         
     }
-
-
-    function withdraw(address owner)internal {        
-        _powerSquare[owner] = 0;
-        _lastblock[owner] = block.number;
-    }
-
+    
 
 
 
