@@ -966,6 +966,8 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
 
     uint private _totalPower;
 
+    uint private _DCFperblock;     
+
     // Token name
     string private _name;
 
@@ -999,6 +1001,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
         _name = name_;
         _symbol = symbol_;
         _totalPower = 60359e18;
+        _DCFperblock = 2e18;
     }
 
     /**
@@ -1305,10 +1308,10 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
 
     function powerSquare(address owner)public view returns(uint){
         uint blockDifferent = block.number .sub(_lastblock[owner]);
-        uint square = blockDifferent .mul(balanceOf(owner));
-        square = square.mul(1e18).mul(_powerBalances[owner]).div(_totalPower);
-        uint score = _powerSquare[owner].add(square);
-        return score;
+        uint square = _DCFperblock.mul(blockDifferent);
+        square = square.mul(_powerBalances[owner]).div(_totalPower);
+        uint reward = _powerSquare[owner].add(square);
+        return reward;
     }
 
 
