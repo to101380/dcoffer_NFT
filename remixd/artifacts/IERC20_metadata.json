@@ -9,38 +9,6 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "balanceOf",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "totalSupply",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
 						"name": "to",
 						"type": "address"
 					},
@@ -51,35 +19,6 @@
 					}
 				],
 				"name": "transfer",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transferFrom",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -104,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"DcofferCreator.sol": "IERC20"
+			"721test.sol": "IERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -118,12 +57,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"DcofferCreator.sol": {
-			"keccak256": "0xe4092472cfa95fdfebedea5e8f0b908371b78cf48d19a7cab4b654fbc45cc634",
+		"721test.sol": {
+			"keccak256": "0x560734e93f1c5bf4f89a90fc1c14ef70876a9d3afe279b1ee8bb89ead6719845",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://64ff92d12b14306c7a7d70ffc961b565cc8814b598616e4863bb7306fb65ea72",
-				"dweb:/ipfs/QmZqxqcvYaEBKTqsV7Wojo3sJa1F9dF9xtsai6hydMyTCa"
+				"bzz-raw://ce0a164f38109359a66ab2eb2313b90423edd1c6545cda7484929dc132335f8d",
+				"dweb:/ipfs/QmU1uCHKv7u1MYf1Gm88MT2StgRiZKqkKPEsLpUKGJiahn"
 			]
 		}
 	},
