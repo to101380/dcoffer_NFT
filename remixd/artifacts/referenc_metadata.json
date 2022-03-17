@@ -4,21 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [],
-				"name": "totalSupply",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -32,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"721test.sol": "ERC721Enumerable"
+			"reference.sol": "referenc"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -46,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"721test.sol": {
-			"keccak256": "0x560734e93f1c5bf4f89a90fc1c14ef70876a9d3afe279b1ee8bb89ead6719845",
+		"reference.sol": {
+			"keccak256": "0xd749666a3b99ffdf955fe9ca122df3f9dad9e857423cfd2decba2def0447ec8d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ce0a164f38109359a66ab2eb2313b90423edd1c6545cda7484929dc132335f8d",
-				"dweb:/ipfs/QmU1uCHKv7u1MYf1Gm88MT2StgRiZKqkKPEsLpUKGJiahn"
+				"bzz-raw://1c43e5bb71dcf49ed137e7c4b6c0285c8feaee62f20ea9d3f1beb1c5d037e65a",
+				"dweb:/ipfs/QmV8jzN8fbvFyXuhFqmkwU4X25FCgkJbGP8PhLmdZSsNh5"
 			]
 		}
 	},
