@@ -64,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Subscribe.sol": "RaiseFunds"
+			"subscribe.sol": "RaiseFunds"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -78,7 +78,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Subscribe.sol": {
+		"subscribe.sol": {
 			"keccak256": "0x1ab25a9e8818e15bc83090b5f1c32c105dc5b6beae9f963e82b34f28048c19ea",
 			"license": "MIT",
 			"urls": [

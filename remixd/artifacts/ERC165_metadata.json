@@ -43,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ERC721_flatsol": "ERC165"
+			"ERC721_flat.sol": "ERC165"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -57,7 +57,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"ERC721_flatsol": {
+		"ERC721_flat.sol": {
 			"keccak256": "0x19e5d809cdcfd1591a53eced2a6cbc8096957fbe66d978d015c41f69a4f98ce9",
 			"license": "MIT",
 			"urls": [

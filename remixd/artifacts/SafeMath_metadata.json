@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"treasury.sol": "SafeMath"
+			"ERC721_flat.sol": "SafeMath"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,12 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"treasury.sol": {
-			"keccak256": "0x53022fcaf3b8f14dbb6edb96253f37bf2b3c7c3d05579f3ddb3b9d6d44c24a70",
+		"ERC721_flat.sol": {
+			"keccak256": "0x19e5d809cdcfd1591a53eced2a6cbc8096957fbe66d978d015c41f69a4f98ce9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aeb0660c325d80ea95ef980f364d8335bf9d6c2264be3132a7d0472128a5f238",
-				"dweb:/ipfs/QmbKrLxvhQjcnvndDwipkcMWpJdwwBtJRqk5eiqz4rSYdK"
+				"bzz-raw://7d58f45f8f027df05219c78308c9d471884940c8f2165e5a2a8b54d3240e25e4",
+				"dweb:/ipfs/QmZP7C7j7LKxExPfXCj7G8ZyWvR6EYQFGNvMonErFDSPjw"
 			]
 		}
 	},
