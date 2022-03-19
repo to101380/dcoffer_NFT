@@ -938,6 +938,9 @@ interface IERC721Metadata is IERC721 {
     function tokenURI(uint256 tokenId) external view returns (string memory);
 }
 
+
+
+
 // File: @openzeppelin/contracts/token/ERC721/ERC721.sol
 
 
@@ -946,9 +949,9 @@ interface IERC721Metadata is IERC721 {
 pragma solidity ^0.8.0;
 
 
-
-
-
+interface IERC20 {      
+    function transfer(address to, uint256 amount) external returns (bool);
+}
 
 
 
@@ -962,9 +965,15 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
     using Strings for uint256;
     using SafeMath for uint;
 
+    IERC20 dcf = IERC20(address(0xC77f56De066fE50C3e1564bA1cec85aC0aD663cE));
+
     uint private _baseNumber; 
 
     uint private _totalPower;
+
+    uint private _DCFperblock; 
+
+    uint private _Capacity;    
 
     // Token name
     string private _name;
@@ -985,9 +994,9 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
 
     mapping(address => uint)private _powerBalances;
 
-    mapping(address => uint)public _powerSquare;
+    mapping(address => uint)private _powerSquare;
 
-    mapping(address => uint)public _lastblock;
+    mapping(address => uint)private _lastblock;
 
     // Mapping from owner to operator approvals
     mapping(address => mapping(address => bool)) private _operatorApprovals;
@@ -999,6 +1008,8 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
         _name = name_;
         _symbol = symbol_;
         _totalPower = 60359e18;
+        _DCFperblock = 2e18;
+        _Capacity = block.number.add(10512000);
     }
 
     /**
@@ -1275,7 +1286,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
         uint power =uint(random).mod(10);
         power = power.mul(1e18);
 
-        if(power == 0){
+        if(power == 0){ 
             power = 1e18;
         }
 
@@ -1297,30 +1308,40 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, Ownable {
             _lastblock[owner] = block.number;
         }
 
-        _powerSquare[owner] = powerSquare(owner);
+        _powerSquare[owner] = mineStatus(owner);
         _lastblock[owner] = block.number;
     }
 
   
 
-    function powerSquare(address owner)public view returns(uint){
-        uint blockDifferent = block.number .sub(_lastblock[owner]);
-        uint square = blockDifferent .mul(balanceOf(owner));
-        square = square.mul(1e18).mul(_powerBalances[owner]).div(_totalPower);
-        uint score = _powerSquare[owner].add(square);
-        return score;
+    function mineStatus(address owner)public view returns(uint){
+
+        uint nowblock = block.number;
+
+        if(nowblock > _Capacity){
+            nowblock = _Capacity;
+        }
+
+        uint blockDifferent = nowblock.sub(_lastblock[owner]);
+        uint square = _DCFperblock.mul(blockDifferent);
+        square = square.mul(_powerBalances[owner]).div(_totalPower);
+        uint reward = _powerSquare[owner].add(square);
+        return reward;
+    }
+
+    
+
+
+    function claim()external{
+        uint reward = mineStatus(msg.sender);
+        dcf.transfer(msg.sender,reward);
+        _powerSquare[msg.sender] = 0;
+        _lastblock[msg.sender] = block.number;
     }
 
 
 
-    function withdraw(address owner)internal {
-        setblock(owner);
-        _powerSquare[owner] = 0;
-        _lastblock[owner] = block.number;
-    }
-
-
-   
+    
 
 
 
@@ -1599,6 +1620,10 @@ abstract contract _ERC721Enumerable is ERC721Enumerable{
     }
 }
 
+
+
+
+
 // File: ERC721.sol
 
 
@@ -1656,6 +1681,8 @@ contract Dcoffer is ERC721, ERC721URIStorage, ERC721Burnable, _ERC721Enumerable 
 
 
 
+
+
     function tokenURI(uint256 tokenId)
         public
         view
@@ -1669,7 +1696,7 @@ contract Dcoffer is ERC721, ERC721URIStorage, ERC721Burnable, _ERC721Enumerable 
         }
         
     }
-
+    
 
 
 

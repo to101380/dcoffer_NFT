@@ -1,44 +1,83 @@
 {
 	"compiler": {
-		"version": "0.8.12+commit.f00d7308"
+		"version": "0.8.13+commit.abaa5c0e"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "time",
-						"type": "uint256"
-					},
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "lastblock",
+				"outputs": [
 					{
-						"indexed": false,
 						"internalType": "uint256",
-						"name": "price",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "_price",
-				"type": "event"
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "get_price",
+				"name": "mint",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "mytoken",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "myNFT",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "myblock",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "powerSquare",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -51,28 +90,16 @@
 			},
 			{
 				"inputs": [],
-				"name": "token_amount",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "view_price",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -90,7 +117,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"test/event_test.sol": "Dcoffer"
+			"test/test.sol": "Dcoffer"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -104,12 +131,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"test/event_test.sol": {
-			"keccak256": "0x873424f421d4bc30d5f43a873d87657286d48b2eb686292350c55e0ec04d1c7d",
+		"test/test.sol": {
+			"keccak256": "0xa92423c46237665ae5eff226e834b9691422630cc3e5f2f3ef3b702fe8b7e121",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7186ff70180f0e05b75f07ed77334b409e0330acd54fb8c6abede915bc1ef911",
-				"dweb:/ipfs/QmXWcDpHLMSjiZ21qNXCLCnDLDfNt5jYd4EVBvGBbTGpuf"
+				"bzz-raw://ed5b47c8b1b63de8ee93b8130fcf367365f7c8d9539aa43b3efc58902e022987",
+				"dweb:/ipfs/QmZyPDnAwMQhQ9dvQpFQXbCaMFqN8NX4tNt8w2mY7eQobV"
 			]
 		}
 	},

@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"721test.sol": "ERC721Enumerable"
+			"ERC721_flatsol": "ERC721Enumerable"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -46,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"721test.sol": {
-			"keccak256": "0x560734e93f1c5bf4f89a90fc1c14ef70876a9d3afe279b1ee8bb89ead6719845",
+		"ERC721_flatsol": {
+			"keccak256": "0x19e5d809cdcfd1591a53eced2a6cbc8096957fbe66d978d015c41f69a4f98ce9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ce0a164f38109359a66ab2eb2313b90423edd1c6545cda7484929dc132335f8d",
-				"dweb:/ipfs/QmU1uCHKv7u1MYf1Gm88MT2StgRiZKqkKPEsLpUKGJiahn"
+				"bzz-raw://7d58f45f8f027df05219c78308c9d471884940c8f2165e5a2a8b54d3240e25e4",
+				"dweb:/ipfs/QmZP7C7j7LKxExPfXCj7G8ZyWvR6EYQFGNvMonErFDSPjw"
 			]
 		}
 	},
