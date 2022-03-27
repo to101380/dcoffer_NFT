@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 // CAUTION
 // This version of SafeMath should only be used with Solidity 0.8 or later,
@@ -233,9 +233,16 @@ interface IERC20 {
 contract  RaiseFunds{
     using SafeMath for uint;
 
+
+
+    modifier onlyOwner() {
+        require(owner == msg.sender, "Ownable: caller is not the owner");
+        _;
+    }
+
     IERC20 dcf = IERC20(address(0xB1Cd8ad16899318DA9F0A2c9933d599eB9cdC10c));
 
-    uint price = 3000000000000;
+    uint price =  3000000000000;
     address owner;
 
     constructor(){
@@ -259,8 +266,7 @@ contract  RaiseFunds{
         return price;
     } 
 
-    function setPrice(uint _price)external {
-        require(msg.sender == owner);
+    function setPrice(uint _price)external onlyOwner{       
         price = _price;
     } 
 
