@@ -231,7 +231,7 @@ interface IERC20 {
     function totalSupply() external view returns (uint256);
     function balanceOf(address account) external view returns (uint256);
     function transfer(address to, uint256 amount) external returns (bool); 
-    function burnFrom(address account, uint256 amount) external;
+    function burnFrom(address account, uint256 amount) external;     
 }
 
 

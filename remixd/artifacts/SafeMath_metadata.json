@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.11+commit.d7f03943"
+		"version": "0.8.13+commit.abaa5c0e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"subscribe.sol": "SafeMath"
+			"ERC721_flat.sol": "SafeMath"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,12 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"subscribe.sol": {
-			"keccak256": "0xe857be3c90add3e3d60b8dc482b32ce955601d5e6d57cca9791bcec8f560ca8d",
+		"ERC721_flat.sol": {
+			"keccak256": "0x19e5d809cdcfd1591a53eced2a6cbc8096957fbe66d978d015c41f69a4f98ce9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7b4f1f3340ab7ea17972f4e2261d96547089d7f24364a7093b576c50ad97e690",
-				"dweb:/ipfs/QmdDt721FiHDexVQRVSMBFeueB7GqtuEPKvsKKgFyEhUMD"
+				"bzz-raw://7d58f45f8f027df05219c78308c9d471884940c8f2165e5a2a8b54d3240e25e4",
+				"dweb:/ipfs/QmZP7C7j7LKxExPfXCj7G8ZyWvR6EYQFGNvMonErFDSPjw"
 			]
 		}
 	},
