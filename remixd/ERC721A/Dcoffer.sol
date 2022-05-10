@@ -2,6 +2,7 @@
 pragma solidity ^0.8.4;
 
 import "./ERC721A.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract Dcoffer is ERC721A {
   constructor() ERC721A("Dcoffer", "Dcoffer") {}
