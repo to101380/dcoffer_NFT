@@ -1,0 +1,143 @@
+{
+	"id": "8e0e2118c91e4031a988527a1a0fefb9",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.13",
+	"solcLongVersion": "0.8.13+commit.abaa5c0e",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"ERC721A/IDCF.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\n\r\n\r\npragma solidity ^0.8.4;\r\n\r\n\r\n\r\n/**\r\n * @dev Interface of an ERC721A compliant contract.\r\n */\r\ninterface IDCF {\r\n      \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"ERC721A/IDCF.sol": {
+				"IDCF": {
+					"abi": [],
+					"devdoc": {
+						"details": "Interface of an ERC721A compliant contract.",
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Interface of an ERC721A compliant contract.\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"ERC721A/IDCF.sol\":\"IDCF\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"ERC721A/IDCF.sol\":{\"keccak256\":\"0xae7a813a3f261b29988727054c31f7d7130619769dc34c71823f465e10da45f9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://68144b4c538b92f130297911d3ada3e07a3383311f35102e8d6c0d2ed58662b2\",\"dweb:/ipfs/QmSKHrrXPLtLcqF3YQt9YM6ZK4k3KJAxZrhvhuReyuePsa\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"ERC721A/IDCF.sol": {
+				"ast": {
+					"absolutePath": "ERC721A/IDCF.sol",
+					"exportedSymbols": {
+						"IDCF": [
+							3
+						]
+					},
+					"id": 4,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".4"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "37:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "IDCF",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": {
+								"id": 2,
+								"nodeType": "StructuredDocumentation",
+								"src": "68:61:0",
+								"text": " @dev Interface of an ERC721A compliant contract."
+							},
+							"fullyImplemented": true,
+							"id": 3,
+							"linearizedBaseContracts": [
+								3
+							],
+							"name": "IDCF",
+							"nameLocation": "141:4:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 4,
+							"src": "131:27:0",
+							"usedErrors": []
+						}
+					],
+					"src": "37:121:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

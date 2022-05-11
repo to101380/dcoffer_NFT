@@ -5,11 +5,13 @@
 pragma solidity ^0.8.4;
 
 import './IERC721A.sol';
+import './IDCF.sol';
 import '@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol';
 import '@openzeppelin/contracts/utils/Address.sol';
 import '@openzeppelin/contracts/utils/Context.sol';
 import '@openzeppelin/contracts/utils/Strings.sol';
 import '@openzeppelin/contracts/utils/introspection/ERC165.sol';
+import '@openzeppelin/contracts/utils/math/SafeMath.sol';
 
 /**
  * @dev Implementation of https://eips.ethereum.org/EIPS/eip-721[ERC721] Non-Fungible Token Standard, including
@@ -21,7 +23,8 @@ import '@openzeppelin/contracts/utils/introspection/ERC165.sol';
  *
  * Assumes that the maximum token id cannot exceed 2**256 - 1 (max value of uint256).
  */
-contract ERC721A is Context, ERC165, IERC721A {
+contract ERC721A is Context, ERC165, IERC721A, IDCF {
+    using SafeMath for uint;
     using Address for address;
     using Strings for uint256;
 
@@ -50,11 +53,28 @@ contract ERC721A is Context, ERC165, IERC721A {
     // Mapping from owner to operator approvals
     mapping(address => mapping(address => bool)) private _operatorApprovals;
 
+    /**
+     *[user][1] = last_block
+     *[user][2] = accumulation_block 
+    */   
+    mapping(address => mapping(uint => uint))private _BlockScore;
+
     constructor(string memory name_, string memory symbol_) {
         _name = name_;
         _symbol = symbol_;
         _currentIndex = _startTokenId();
     }
+
+  
+
+    function BlockScore(address user)external view returns(uint){
+        uint a = block.number.sub(_BlockScore[user][1]);
+        uint b = balanceOf(user).mul(a);
+        uint c = _BlockScore[user][2].add(b);
+        return c;
+    }
+
+   
 
     /**
      * To change the starting tokenId, please override this function.
