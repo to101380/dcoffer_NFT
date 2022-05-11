@@ -68,10 +68,10 @@ contract ERC721A is Context, ERC165, IERC721A, IDCF {
   
 
     function BlockScore(address user)external view returns(uint){
-        uint a = block.number.sub(_BlockScore[user][1]);
-        uint b = balanceOf(user).mul(a);
-        uint c = _BlockScore[user][2].add(b);
-        return c;
+        uint difference = block.number.sub(_BlockScore[user][1]);
+        uint Product = balanceOf(user).mul(difference);
+        uint accumulation = _BlockScore[user][2].add(Product);
+        return accumulation;
     }
 
    
