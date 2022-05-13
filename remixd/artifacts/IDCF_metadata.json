@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "BlockScore",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface of an ERC721A compliant contract.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Dcoffer_flat.sol": "IDCF"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Dcoffer_flat.sol": {
+			"keccak256": "0x136f77ac8c163cb8e4d603cee12498fdb8f6f552383dd8ecd55c3ef4b9a6f6b6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bc7e01fba9bb7f96969842b067c5ae53b8cee2746b6d5b496f0bc8db789dc1cd",
+				"dweb:/ipfs/QmPtLcSuVgEk3zXB4XmfLrgx2ENtmN67h7JRuKmbqEthyU"
+			]
+		}
+	},
+	"version": 1
+}
