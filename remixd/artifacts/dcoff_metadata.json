@@ -128,37 +128,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "burn",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "burnFrom",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "decimals",
 				"outputs": [
@@ -313,7 +282,6 @@
 			}
 		],
 		"devdoc": {
-			"custom:security-contact": "to101380@gmail.com",
 			"kind": "dev",
 			"methods": {
 				"allowance(address,address)": {
@@ -324,12 +292,6 @@
 				},
 				"balanceOf(address)": {
 					"details": "See {IERC20-balanceOf}."
-				},
-				"burn(uint256)": {
-					"details": "Destroys `amount` tokens from the caller. See {ERC20-_burn}."
-				},
-				"burnFrom(address,uint256)": {
-					"details": "Destroys `amount` tokens from `account`, deducting from the caller's allowance. See {ERC20-_burn} and {ERC20-allowance}. Requirements: - the caller must have allowance for ``accounts``'s tokens of at least `amount`."
 				},
 				"decimals()": {
 					"details": "Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5.05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the value {ERC20} uses, unless this function is overridden; NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}."
@@ -366,7 +328,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ERC20_flat.sol": "Dcoff"
+			"DCOFF_flat.sol": "DCOFF"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -380,12 +342,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"ERC20_flat.sol": {
-			"keccak256": "0x2f519e6ffbe41c3721c11ef2b77b72ee0a22a69b9ee9f8b7af889c84b44d7e1a",
-			"license": "MIT",
+		"DCOFF_flat.sol": {
+			"keccak256": "0xc9ff1430dd6c6f119699ff24a12a9d051bf661160c827db1b1f453d0bc056073",
 			"urls": [
-				"bzz-raw://9e4143a0d882add68785180e884619c8ca77bcc8a566c22bec578f17ad099728",
-				"dweb:/ipfs/Qma3bUPVnGU4sEKpnTTHRhfxzuvW64msxtLUGf84CzEaah"
+				"bzz-raw://a286d392fa9d31bdf379b650cb333bda24b46d472940766bfb1eb2fe03a71501",
+				"dweb:/ipfs/QmY8R3v1tTMjp1G5mjrfGiCa6air3dhCtwfEFPgWV3WTDZ"
 			]
 		}
 	},

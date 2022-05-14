@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Dcoffer_flat.sol": "SafeMath"
+			"treasury.sol": "SafeMath"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,12 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Dcoffer_flat.sol": {
-			"keccak256": "0x136f77ac8c163cb8e4d603cee12498fdb8f6f552383dd8ecd55c3ef4b9a6f6b6",
+		"treasury.sol": {
+			"keccak256": "0x9f785e8cd5584985cdb5b5ac51c68613da178a8fbbae7108dc2af6f730caba0b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bc7e01fba9bb7f96969842b067c5ae53b8cee2746b6d5b496f0bc8db789dc1cd",
-				"dweb:/ipfs/QmPtLcSuVgEk3zXB4XmfLrgx2ENtmN67h7JRuKmbqEthyU"
+				"bzz-raw://3460877aa0bb6e521e6391626f639a8ccd9950d5c4e7ac26a2c046f9095a5e23",
+				"dweb:/ipfs/QmQoZdctjnk1VTe7UgTgYvFf8AgyfjHsFj7DqAPMhhSrWR"
 			]
 		}
 	},

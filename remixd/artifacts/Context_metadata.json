@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Dcoffer_flat.sol": "Context"
+			"DCOFF_flat.sol": "Context"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,12 +33,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"Dcoffer_flat.sol": {
-			"keccak256": "0x136f77ac8c163cb8e4d603cee12498fdb8f6f552383dd8ecd55c3ef4b9a6f6b6",
-			"license": "MIT",
+		"DCOFF_flat.sol": {
+			"keccak256": "0xc9ff1430dd6c6f119699ff24a12a9d051bf661160c827db1b1f453d0bc056073",
 			"urls": [
-				"bzz-raw://bc7e01fba9bb7f96969842b067c5ae53b8cee2746b6d5b496f0bc8db789dc1cd",
-				"dweb:/ipfs/QmPtLcSuVgEk3zXB4XmfLrgx2ENtmN67h7JRuKmbqEthyU"
+				"bzz-raw://a286d392fa9d31bdf379b650cb333bda24b46d472940766bfb1eb2fe03a71501",
+				"dweb:/ipfs/QmY8R3v1tTMjp1G5mjrfGiCa6air3dhCtwfEFPgWV3WTDZ"
 			]
 		}
 	},

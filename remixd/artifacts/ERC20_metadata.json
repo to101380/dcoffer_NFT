@@ -343,7 +343,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ERC20_flat.sol": "ERC20"
+			"DCOFF_flat.sol": "ERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -357,12 +357,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"ERC20_flat.sol": {
-			"keccak256": "0x2f519e6ffbe41c3721c11ef2b77b72ee0a22a69b9ee9f8b7af889c84b44d7e1a",
-			"license": "MIT",
+		"DCOFF_flat.sol": {
+			"keccak256": "0xc9ff1430dd6c6f119699ff24a12a9d051bf661160c827db1b1f453d0bc056073",
 			"urls": [
-				"bzz-raw://9e4143a0d882add68785180e884619c8ca77bcc8a566c22bec578f17ad099728",
-				"dweb:/ipfs/Qma3bUPVnGU4sEKpnTTHRhfxzuvW64msxtLUGf84CzEaah"
+				"bzz-raw://a286d392fa9d31bdf379b650cb333bda24b46d472940766bfb1eb2fe03a71501",
+				"dweb:/ipfs/QmY8R3v1tTMjp1G5mjrfGiCa6air3dhCtwfEFPgWV3WTDZ"
 			]
 		}
 	},
