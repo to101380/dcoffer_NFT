@@ -375,11 +375,11 @@
 			]
 		},
 		"Dcoffer/ERC20/DCOFF.sol": {
-			"keccak256": "0xe9925d8299bda55ebf7cd233edf27c63703a50c31b39b4da1896016aa27eaafb",
+			"keccak256": "0x9938fa95baebd9cd3776c65f10fa681b28c32fd732048687dd27ce86869c9dc6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e097410e851d70fe5cd0a1cafd2defad62bb565bf7cacd259840be9ec9d39fec",
-				"dweb:/ipfs/QmYHE6tsi61NoBHKh9NSzRbNozgn7ZjJmhtYXAu4PYZbKE"
+				"bzz-raw://9d26373f8cca4ed2e4a4b917b8f908a342edbf9775b7ce45093c096c3d5fec05",
+				"dweb:/ipfs/QmUeziKvCcrtVvAH5hYKGCr2Lcz4cZB7h9Bi1c7L6DeckC"
 			]
 		}
 	},

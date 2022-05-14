@@ -406,11 +406,11 @@
 	},
 	"sources": {
 		"Dcoffer_flat.sol": {
-			"keccak256": "0x136f77ac8c163cb8e4d603cee12498fdb8f6f552383dd8ecd55c3ef4b9a6f6b6",
+			"keccak256": "0xdd518e18705fca21c8aa91eaf27d1c1919d938aa224ae255373302153f177156",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bc7e01fba9bb7f96969842b067c5ae53b8cee2746b6d5b496f0bc8db789dc1cd",
-				"dweb:/ipfs/QmPtLcSuVgEk3zXB4XmfLrgx2ENtmN67h7JRuKmbqEthyU"
+				"bzz-raw://309e7496d44b78227b397d8967e68cd032380346a72d06c3a5dae0cd625a0a20",
+				"dweb:/ipfs/QmeEejUd4CUQRhKuLskxAmXk8qoviVy8WJ5JP7ZPJTmFwq"
 			]
 		}
 	},

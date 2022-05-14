@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.12+commit.f00d7308"
+		"version": "0.8.13+commit.abaa5c0e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -12,47 +12,10 @@
 			},
 			{
 				"inputs": [],
-				"name": "dcfPrice",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "publicWorks",
+				"name": "MineDcoff",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "dcf_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "sell",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "subscribe",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -68,7 +31,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"treasury.sol": "treasury"
+			"treasury_flat.sol": "treasury"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -82,12 +45,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"treasury.sol": {
-			"keccak256": "0xa6a251fa0ff433d5929fa70739fceb1ac5208d19d84b74813e02bab87e37bd45",
+		"treasury_flat.sol": {
+			"keccak256": "0xa83068cb1a33b189a2e5392f85739028fa031c580f48f27b57276806c13c7247",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c8d267a36498e6b6acab1cc51817934f72f2c73d7c8f084a088d9c421ac15472",
-				"dweb:/ipfs/QmeUk4pzN3DTGkZzfER7CrymMsf1Y9GwcLENXLg8mBAMv2"
+				"bzz-raw://314e80f5ec5665bbbca0b1a2d9308cdb3dc83c60a4ad4fed88e29aadd5f77449",
+				"dweb:/ipfs/QmWuMjhZj9rWjM85SPmuvz3AYGRK7pR9uN9mfX3QZmbrQD"
 			]
 		}
 	},

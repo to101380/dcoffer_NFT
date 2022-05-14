@@ -16,6 +16,25 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "mineStatus",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -70,11 +89,11 @@
 			]
 		},
 		"Dcoffer/treasury.sol": {
-			"keccak256": "0xed1edbf2809fb20773eb77e5f91ff243cf76aef90e617d457fd3dc5431f8561e",
+			"keccak256": "0x4bf071a41622dd7482a553531f8636bfcb3fc28dfbf735d45f9cc477ebeeb4ca",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d5a3c633773c4a011b95ecb538048f3c281f654a61ce05623bdaa1ce625dd3a0",
-				"dweb:/ipfs/QmQ21N6PiggAXtbezxKk8mM7ibMeYaYHZSxVsaJtigtMdE"
+				"bzz-raw://b30dc682e42543eb985f0722bfa13ab4ffbd72dbc3d361f4a40927b368323710",
+				"dweb:/ipfs/QmUJtPBWxKjzfsF8bFdwP9UXwCucmsm2FcM4wPCXCbzFWy"
 			]
 		}
 	},

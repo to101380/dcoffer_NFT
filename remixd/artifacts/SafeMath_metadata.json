@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"treasury.sol": "SafeMath"
+			"treasury_flat.sol": "SafeMath"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,12 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"treasury.sol": {
-			"keccak256": "0x9f785e8cd5584985cdb5b5ac51c68613da178a8fbbae7108dc2af6f730caba0b",
+		"treasury_flat.sol": {
+			"keccak256": "0xa83068cb1a33b189a2e5392f85739028fa031c580f48f27b57276806c13c7247",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3460877aa0bb6e521e6391626f639a8ccd9950d5c4e7ac26a2c046f9095a5e23",
-				"dweb:/ipfs/QmQoZdctjnk1VTe7UgTgYvFf8AgyfjHsFj7DqAPMhhSrWR"
+				"bzz-raw://314e80f5ec5665bbbca0b1a2d9308cdb3dc83c60a4ad4fed88e29aadd5f77449",
+				"dweb:/ipfs/QmWuMjhZj9rWjM85SPmuvz3AYGRK7pR9uN9mfX3QZmbrQD"
 			]
 		}
 	},

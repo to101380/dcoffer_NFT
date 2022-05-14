@@ -358,10 +358,11 @@
 	},
 	"sources": {
 		"DCOFF_flat.sol": {
-			"keccak256": "0xc9ff1430dd6c6f119699ff24a12a9d051bf661160c827db1b1f453d0bc056073",
+			"keccak256": "0x99dda86e7ac62475e88ca678a733c56d6155b9b9e54ee00654ab444efb2adb97",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://a286d392fa9d31bdf379b650cb333bda24b46d472940766bfb1eb2fe03a71501",
-				"dweb:/ipfs/QmY8R3v1tTMjp1G5mjrfGiCa6air3dhCtwfEFPgWV3WTDZ"
+				"bzz-raw://74f2a96de6fc0a98c411f1e2a8f0feba8d695c96fe642112931fcac2c84a3747",
+				"dweb:/ipfs/QmNNBR1fZgcJqB4yUmnLrnkwAj1PDrmBB9Ne7r9Xsh94eW"
 			]
 		}
 	},
