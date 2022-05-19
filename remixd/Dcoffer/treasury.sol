@@ -3,41 +3,52 @@ pragma solidity ^0.8.4;
 
 import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 import '@openzeppelin/contracts/utils/math/SafeMath.sol';
-import './IDCF/IDCF.sol';
+
 
 contract treasury  {
   using SafeMath for uint;  
-  IDCF mine = IDCF(0x6a544367FCa7064B6ADA5dc87F7E5058A9bB7Af9);
+
   IERC20 dcoff =  IERC20(0xbE0C856e2981b9f03d7613566DFC6679eEe4708A);
 
-  uint256 DcoffperBlock;  
-  mapping(address => uint256 )private ScoreWithdrawn;
+  uint256 private K;
 
-  constructor(){
-    DcoffperBlock = 2e14;
+  constructor(uint _k){
+    owner = msg.sender;
+    K = _k;
+  }
+
+  address owner;
+  mapping(address => bool)private RouterAdmin;
+
+  modifier onlyOwner() {
+        require(owner == msg.sender, "Ownable: caller is not the owner");
+        _;
   }
 
 
-  function MineDcoff()external{      
-      uint256 GetDCF = mineStatus(msg.sender);
-      dcoff.transfer(msg.sender,GetDCF);
+  
 
-      uint256 afterScore = Score(msg.sender);
-      ScoreWithdrawn[msg.sender] = ScoreWithdrawn[msg.sender].add(afterScore);
-  }  
 
-  function Score(address user)internal view returns(uint256){
-      uint256 _Score = mine.BlockScore(user);
-      uint256 afterScore = _Score.sub(ScoreWithdrawn[user]);
-      return afterScore;
-  } 
 
-  function mineStatus(address user)public view returns(uint256){
-      uint256 afterScore = Score(user);
-      uint256 GetDCF = afterScore.mul(DcoffperBlock);
-      return GetDCF;
+
+
+  function setRouter(address user, bool power)external onlyOwner{
+    RouterAdmin[user] = power;
   }
 
+
+  function DcfPrice(uint256 dcf_amount)public view returns(uint){
+    uint256 _eth_amount = address(this).balance;
+    uint256 _dcf_amount = dcoff.balanceOf(address(this));
+    uint256 Variable_dcf = _dcf_amount.add(dcf_amount);
+    uint256 Variable_eth = K.div(Variable_dcf);
+    uint256 _price = _eth_amount.sub(Variable_eth);
+    return _price;
+  }
+
+
+
+ 
    
   
 

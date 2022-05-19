@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.14+commit.80d49f37"
 	},
 	"language": "Solidity",
 	"output": {
@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"treasury_flat.sol": "SafeMath"
+			"subscribe.sol": "SafeMath"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,12 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"treasury_flat.sol": {
-			"keccak256": "0xa83068cb1a33b189a2e5392f85739028fa031c580f48f27b57276806c13c7247",
+		"subscribe.sol": {
+			"keccak256": "0x69362c0aeaae5cc2b05c4c6915bc05db309893d59fe66f2931aa571f524b99b0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://314e80f5ec5665bbbca0b1a2d9308cdb3dc83c60a4ad4fed88e29aadd5f77449",
-				"dweb:/ipfs/QmWuMjhZj9rWjM85SPmuvz3AYGRK7pR9uN9mfX3QZmbrQD"
+				"bzz-raw://2cdf03e860fe40b647e368b27c0a4df6f2ba1eb58ae46b7d3a78349e7e3bf8e2",
+				"dweb:/ipfs/QmUfTb11sx4QQKLa6ShP4d9v6CvWy3PnpkJBhQwe6y2aWV"
 			]
 		}
 	},

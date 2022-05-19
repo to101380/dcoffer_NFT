@@ -1,31 +1,30 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.14+commit.80d49f37"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_k",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "MineDcoff",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "user",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "dcf_amount",
+						"type": "uint256"
 					}
 				],
-				"name": "mineStatus",
+				"name": "DcfPrice",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -34,6 +33,24 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "power",
+						"type": "bool"
+					}
+				],
+				"name": "setRouter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -80,20 +97,12 @@
 				"dweb:/ipfs/QmQJquTMtc6fgm5JQzGdsGpA2fqBe3MHWEdt2qzaLySMdN"
 			]
 		},
-		"Dcoffer/IDCF/IDCF.sol": {
-			"keccak256": "0x46f37359686638f9b09b85b67546f013da80a49dcbf195b3d27d0462cfacf135",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://715b10cc638500e1a1755f8612a35d906e2cf5a919629926ae43d51bace05911",
-				"dweb:/ipfs/Qmb2Nxbut2U6yrr1hoqWj28VFPE7sGvG3BHbTfNnAkuVkM"
-			]
-		},
 		"Dcoffer/treasury.sol": {
-			"keccak256": "0x4bf071a41622dd7482a553531f8636bfcb3fc28dfbf735d45f9cc477ebeeb4ca",
+			"keccak256": "0x4294835790e489ec5b7fc38664a40d82cdeb1659a887ba63704db938c1a410c7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b30dc682e42543eb985f0722bfa13ab4ffbd72dbc3d361f4a40927b368323710",
-				"dweb:/ipfs/QmUJtPBWxKjzfsF8bFdwP9UXwCucmsm2FcM4wPCXCbzFWy"
+				"bzz-raw://476078c046d9311874ccfaca191c6c5e7ec03dce562ca0d2ae12a2bac07c1b92",
+				"dweb:/ipfs/QmPUXrMu7KWwNFwsqH9SdkyePoN8uxmSCPsMccMBdZT2ds"
 			]
 		}
 	},

@@ -54,11 +54,11 @@
 	},
 	"sources": {
 		"treasury_flat.sol": {
-			"keccak256": "0xa83068cb1a33b189a2e5392f85739028fa031c580f48f27b57276806c13c7247",
+			"keccak256": "0x4ee8f4a18a1ebdc35948eedb324d69295cad617576d03360637b85209c30a10d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://314e80f5ec5665bbbca0b1a2d9308cdb3dc83c60a4ad4fed88e29aadd5f77449",
-				"dweb:/ipfs/QmWuMjhZj9rWjM85SPmuvz3AYGRK7pR9uN9mfX3QZmbrQD"
+				"bzz-raw://ee00bcfa31a940a4864821daa0751ea3fcb83eb4d52c5d27452fd4f7e089ba7e",
+				"dweb:/ipfs/QmTCnrPJiuBM4RGwmPAQkthyvMbuHrU59AuvHmkiji9X7n"
 			]
 		}
 	},
