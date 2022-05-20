@@ -8,11 +8,11 @@ import '@openzeppelin/contracts/utils/math/SafeMath.sol';
 contract treasury  {
   using SafeMath for uint;  
 
-  IERC20 dcoff =  IERC20(0xbE0C856e2981b9f03d7613566DFC6679eEe4708A);
+  IERC20 dcoff =  IERC20(0xd14ff067355Ce838A6e110bDFb672DbEc83cA23C);
 
   uint256 private K;
 
-  constructor(uint _k){
+  constructor(uint _k)payable{
     owner = msg.sender;
     K = _k;
   }

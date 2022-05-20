@@ -285,11 +285,11 @@
 	},
 	"sources": {
 		"DCOFF_flat.sol": {
-			"keccak256": "0x948753803cc23e240b9c8c9f1ecaee9adc5631cddac6027fb17a9c1f2eb9a6c9",
+			"keccak256": "0x99dda86e7ac62475e88ca678a733c56d6155b9b9e54ee00654ab444efb2adb97",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://61ab86cea4cab363f256a777ae20c3dedeb4deef7496117793f754a2c44c6bc4",
-				"dweb:/ipfs/Qmemt4jq2QPdqUNTCQRk9zt4QBggD1q8r38MiR4cw6CeJx"
+				"bzz-raw://74f2a96de6fc0a98c411f1e2a8f0feba8d695c96fe642112931fcac2c84a3747",
+				"dweb:/ipfs/QmNNBR1fZgcJqB4yUmnLrnkwAj1PDrmBB9Ne7r9Xsh94eW"
 			]
 		}
 	},

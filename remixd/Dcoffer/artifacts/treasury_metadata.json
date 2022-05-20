@@ -13,7 +13,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "constructor"
 			},
 			{
@@ -98,11 +98,11 @@
 			]
 		},
 		"Dcoffer/treasury.sol": {
-			"keccak256": "0x4294835790e489ec5b7fc38664a40d82cdeb1659a887ba63704db938c1a410c7",
+			"keccak256": "0xaedc788e752bfc8865e93fb1b5628140d833f3c8bc7c72d8ce86f4ea19e9a443",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://476078c046d9311874ccfaca191c6c5e7ec03dce562ca0d2ae12a2bac07c1b92",
-				"dweb:/ipfs/QmPUXrMu7KWwNFwsqH9SdkyePoN8uxmSCPsMccMBdZT2ds"
+				"bzz-raw://8e452b3b64ad6302038b3e3665d6fd3e72cd460facdd847f2e11f32a7345d415",
+				"dweb:/ipfs/QmZ1EZytNNwfy3txhtDyP2E8s9UrkiyukcWWzHHCtzeijp"
 			]
 		}
 	},
