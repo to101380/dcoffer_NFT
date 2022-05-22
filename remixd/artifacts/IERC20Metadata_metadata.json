@@ -270,7 +270,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"DCOFF_flat.sol": "IERC20Metadata"
+			"treasury_flat.sol": "IERC20Metadata"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -284,12 +284,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"DCOFF_flat.sol": {
-			"keccak256": "0x99dda86e7ac62475e88ca678a733c56d6155b9b9e54ee00654ab444efb2adb97",
+		"treasury_flat.sol": {
+			"keccak256": "0x704d2703b4b5d0097c5779edc487d07db96a9d9682fc44b344806a605b6674f6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://74f2a96de6fc0a98c411f1e2a8f0feba8d695c96fe642112931fcac2c84a3747",
-				"dweb:/ipfs/QmNNBR1fZgcJqB4yUmnLrnkwAj1PDrmBB9Ne7r9Xsh94eW"
+				"bzz-raw://8bb50143443e68d2dc90cf8c649d4e27c2a881df39af74cb05dbf040a9858c5c",
+				"dweb:/ipfs/QmZyaUMMMeNBcMSy2P6EiHkYpayQk9VtNBVf1jvnrXW1Nj"
 			]
 		}
 	},

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.14+commit.80d49f37"
 	},
 	"language": "Solidity",
 	"output": {
@@ -361,7 +361,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ERC20_flat.sol": "ERC20Burnable"
+			"treasury_flat.sol": "ERC20Burnable"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -375,12 +375,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"ERC20_flat.sol": {
-			"keccak256": "0x2f519e6ffbe41c3721c11ef2b77b72ee0a22a69b9ee9f8b7af889c84b44d7e1a",
+		"treasury_flat.sol": {
+			"keccak256": "0x704d2703b4b5d0097c5779edc487d07db96a9d9682fc44b344806a605b6674f6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9e4143a0d882add68785180e884619c8ca77bcc8a566c22bec578f17ad099728",
-				"dweb:/ipfs/Qma3bUPVnGU4sEKpnTTHRhfxzuvW64msxtLUGf84CzEaah"
+				"bzz-raw://8bb50143443e68d2dc90cf8c649d4e27c2a881df39af74cb05dbf040a9858c5c",
+				"dweb:/ipfs/QmZyaUMMMeNBcMSy2P6EiHkYpayQk9VtNBVf1jvnrXW1Nj"
 			]
 		}
 	},

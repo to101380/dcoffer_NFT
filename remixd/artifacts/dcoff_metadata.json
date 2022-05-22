@@ -128,6 +128,37 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "burnFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "decimals",
 				"outputs": [
@@ -293,6 +324,12 @@
 				"balanceOf(address)": {
 					"details": "See {IERC20-balanceOf}."
 				},
+				"burn(uint256)": {
+					"details": "Destroys `amount` tokens from the caller. See {ERC20-_burn}."
+				},
+				"burnFrom(address,uint256)": {
+					"details": "Destroys `amount` tokens from `account`, deducting from the caller's allowance. See {ERC20-_burn} and {ERC20-allowance}. Requirements: - the caller must have allowance for ``accounts``'s tokens of at least `amount`."
+				},
 				"decimals()": {
 					"details": "Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5.05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the value {ERC20} uses, unless this function is overridden; NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}."
 				},
@@ -343,11 +380,11 @@
 	},
 	"sources": {
 		"DCOFF_flat.sol": {
-			"keccak256": "0x99dda86e7ac62475e88ca678a733c56d6155b9b9e54ee00654ab444efb2adb97",
+			"keccak256": "0x6c866e81a7eae0812e1b8f559e97b3bbdd8a4b7f725ac9829533469fadd6ccf7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://74f2a96de6fc0a98c411f1e2a8f0feba8d695c96fe642112931fcac2c84a3747",
-				"dweb:/ipfs/QmNNBR1fZgcJqB4yUmnLrnkwAj1PDrmBB9Ne7r9Xsh94eW"
+				"bzz-raw://e7b1e19c4874e2fcb47ffe8639522ea5f6705991b46194466adaff6679a3ee66",
+				"dweb:/ipfs/QmbtABkojX5ks6kMGxEmfT6aUx54k9GDLA1Ry9ZhqZy6b6"
 			]
 		}
 	},
