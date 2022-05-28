@@ -34,6 +34,9 @@ contract ERC721A is Context, ERC165, IERC721A, IDCF {
     // The number of tokens burned.
     uint256 internal _burnCounter;
 
+    //max supply
+    uint256 internal _maxsupply;
+ 
     // Token name
     string private _name;
 
@@ -59,10 +62,11 @@ contract ERC721A is Context, ERC165, IERC721A, IDCF {
     */   
     mapping(address => mapping(uint256 => uint256))private _BlockScore;
 
-    constructor(string memory name_, string memory symbol_) {
+    constructor(string memory name_, string memory symbol_, uint256 maxsupply_) {
         _name = name_;
         _symbol = symbol_;
-        _currentIndex = _startTokenId();
+        _currentIndex = _startTokenId(); 
+        _maxsupply = maxsupply_;      
     }
 
   
@@ -87,7 +91,7 @@ contract ERC721A is Context, ERC165, IERC721A, IDCF {
      * To change the starting tokenId, please override this function.
      */
     function _startTokenId() internal view virtual returns (uint256) {
-        return 1;
+        return 0;
     }
 
     /**
@@ -312,7 +316,7 @@ contract ERC721A is Context, ERC165, IERC721A, IDCF {
      *
      * Tokens can be managed by their owner or approved accounts via {approve} or {setApprovalForAll}.
      *
-     * Tokens start existing when they are minted (`_mint`),
+     *   (`_mint`),
      */
     function _exists(uint256 tokenId) internal view returns (bool) {
         return _startTokenId() <= tokenId && tokenId < _currentIndex && !_ownerships[tokenId].burned;
@@ -340,7 +344,8 @@ contract ERC721A is Context, ERC165, IERC721A, IDCF {
         address to,
         uint256 quantity,
         bytes memory _data
-    ) internal {
+    ) internal {   
+        require(_currentIndex.add(quantity)>_maxsupply,"exceeds max supply!");
         updateBlockScore(to);
         uint256 startTokenId = _currentIndex;
         if (to == address(0)) revert MintToZeroAddress();

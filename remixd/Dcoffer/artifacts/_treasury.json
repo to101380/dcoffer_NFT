@@ -49,69 +49,10 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"DCF_ETH(uint256)": "3a23bf49",
-			"ETH_DCF(uint256)": "97dedb1d",
-			"market(address,uint256)": "94756aa7",
 			"subscribe(address)": "41a7726a"
 		}
 	},
 	"abi": [
-		{
-			"inputs": [
-				{
-					"internalType": "uint256",
-					"name": "dcf_amount",
-					"type": "uint256"
-				}
-			],
-			"name": "DCF_ETH",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "uint256",
-					"name": "eth_amount",
-					"type": "uint256"
-				}
-			],
-			"name": "ETH_DCF",
-			"outputs": [
-				{
-					"internalType": "uint256",
-					"name": "",
-					"type": "uint256"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address payable",
-					"name": "seller",
-					"type": "address"
-				},
-				{
-					"internalType": "uint256",
-					"name": "dcf_amount",
-					"type": "uint256"
-				}
-			],
-			"name": "market",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
 		{
 			"inputs": [
 				{

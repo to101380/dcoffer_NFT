@@ -16,6 +16,11 @@
 						"internalType": "string",
 						"name": "symbol_",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxsupply_",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -660,11 +665,11 @@
 			]
 		},
 		"Dcoffer/ERC721A/ERC721A.sol": {
-			"keccak256": "0x76887d741a4af608d618c382d285933205578f503e75b494421c4df96c53fd2f",
+			"keccak256": "0x96a838757db3db49c63ec8bf3382f3ad748dc9631c68b1a5affa40f908f9a5ba",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ce0941aee6ef8a0649e32a1e16067442c4fa00be5a2f35c12d110f32a320143a",
-				"dweb:/ipfs/QmPanqiwkUMwBiVNt5raxtE6Tt2JVsr3W1APc2J1jDAePy"
+				"bzz-raw://a926e154649743a55292079bf69e7a5668083a792f4dbdb73ec336ff03b50b41",
+				"dweb:/ipfs/QmZxBjrVv2igcekNHPmo66KecEvgNrPqZ2EaRxM4PXCJyn"
 			]
 		},
 		"Dcoffer/ERC721A/IERC721A.sol": {

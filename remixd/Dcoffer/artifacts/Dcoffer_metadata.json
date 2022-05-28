@@ -6,7 +6,18 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_admin_fee",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -191,6 +202,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admin_fee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -509,6 +527,19 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewAdminFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -721,11 +752,11 @@
 			]
 		},
 		"Dcoffer/Dcoffer.sol": {
-			"keccak256": "0xf2f30ab5492c1f5c4b017a88306b84653a9c5c78017aab9ca086303db325faf5",
+			"keccak256": "0x63afdc43df1548589c072efabdfed4f30a29f383e032081439795256225ccaad",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://373aa8f271c22a90bbc9d8c54f7a55ebbc5aaa4a867c8239e7338a1a6da3c607",
-				"dweb:/ipfs/QmXqzMxJtUg655AAPzmf27CTpKVhwQKXbzom93dAGdtuPy"
+				"bzz-raw://451964678439c677db7cc8cdcefae9f2f131f3c175cdca5caf418709904a7215",
+				"dweb:/ipfs/QmWKbHxVo8231F6aMWXGY67L7r4CB1uwJ51DuFUoHkcUqk"
 			]
 		},
 		"Dcoffer/ERC721A/ERC721A.sol": {
