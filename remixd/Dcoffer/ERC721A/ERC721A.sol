@@ -154,7 +154,7 @@ contract ERC721A is Context, ERC165, IERC721A, IDCF {
     function _getAux(address owner) internal view returns (uint64) {
         return _addressData[owner].aux;
     }
-
+ 
     /**
      * Sets the auxillary data for `owner`. (e.g. number of whitelist mint slots used).
      * If there are multiple variables, please pack them into a uint64.
@@ -231,7 +231,8 @@ contract ERC721A is Context, ERC165, IERC721A, IDCF {
      * by default, can be overriden in child contracts.
      */
     function _baseURI() internal view virtual returns (string memory) {
-        return 'https://gateway.pinata.cloud/ipfs/QmfHWktTbSTBNLww8ZDh2qc5DKqiZciknoq76ZfXrsoR1v/';
+        return 'https://gateway.pinata.cloud/ipfs/QmWuZ6PWJSWppM5Ah4C7tx6dhEGobkhknsLX34FB9WtnhM/';
+        
     }
 
     /**
