@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"DCOFF_flat.sol": "Context"
+			"ERC721A_flat.sol": "Context"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,12 +33,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"DCOFF_flat.sol": {
-			"keccak256": "0x6c866e81a7eae0812e1b8f559e97b3bbdd8a4b7f725ac9829533469fadd6ccf7",
-			"license": "MIT",
+		"ERC721A_flat.sol": {
+			"keccak256": "0x84ef07cd3976fd0ddbfea3bb5eba5bd8f288f4e857882ec82e2e38c31817544d",
 			"urls": [
-				"bzz-raw://e7b1e19c4874e2fcb47ffe8639522ea5f6705991b46194466adaff6679a3ee66",
-				"dweb:/ipfs/QmbtABkojX5ks6kMGxEmfT6aUx54k9GDLA1Ry9ZhqZy6b6"
+				"bzz-raw://a012cdab53328e2873dc13f15ac360a4f67386d40817436b4597f95a523011b3",
+				"dweb:/ipfs/QmPmV6yESMmSB3SgxydWDeBBeL72HxnvX1kUNWQY8PLaeH"
 			]
 		}
 	},

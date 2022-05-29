@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.14+commit.80d49f37"
 	},
 	"language": "Solidity",
 	"output": {
@@ -43,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Dcoffer_flat.sol": "IERC165"
+			"ERC721A_flat.sol": "IERC165"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -57,12 +57,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"Dcoffer_flat.sol": {
-			"keccak256": "0xdd518e18705fca21c8aa91eaf27d1c1919d938aa224ae255373302153f177156",
-			"license": "MIT",
+		"ERC721A_flat.sol": {
+			"keccak256": "0x84ef07cd3976fd0ddbfea3bb5eba5bd8f288f4e857882ec82e2e38c31817544d",
 			"urls": [
-				"bzz-raw://309e7496d44b78227b397d8967e68cd032380346a72d06c3a5dae0cd625a0a20",
-				"dweb:/ipfs/QmeEejUd4CUQRhKuLskxAmXk8qoviVy8WJ5JP7ZPJTmFwq"
+				"bzz-raw://a012cdab53328e2873dc13f15ac360a4f67386d40817436b4597f95a523011b3",
+				"dweb:/ipfs/QmPmV6yESMmSB3SgxydWDeBBeL72HxnvX1kUNWQY8PLaeH"
 			]
 		}
 	},

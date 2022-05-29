@@ -14,7 +14,7 @@ contract Dcoffer is ERC721A {
 
   _treasury treasuryCtrl = _treasury(0x063243b32833d9398Fb2186d900bbdAa2A05326D);
 
-  constructor(uint256 _price, uint256 _admin_fee) ERC721A("Dcoffer", "Dcoffer") {
+  constructor(uint256 _price, uint256 _admin_fee)ERC721A("Dcoffer", "Dcoffer",10000) {
     info[0][1] = _price;
     info[0][2] = _admin_fee;
   }

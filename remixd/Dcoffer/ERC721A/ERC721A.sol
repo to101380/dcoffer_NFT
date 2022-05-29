@@ -346,7 +346,7 @@ contract ERC721A is Context, ERC165, IERC721A, IDCF {
         uint256 quantity,
         bytes memory _data
     ) internal {   
-        require(_currentIndex.add(quantity)>_maxsupply,"exceeds max supply!");
+        // require(_currentIndex.add(quantity)>_maxsupply,"exceeds max supply!");
         updateBlockScore(to);
         uint256 startTokenId = _currentIndex;
         if (to == address(0)) revert MintToZeroAddress();

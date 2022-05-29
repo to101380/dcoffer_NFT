@@ -41,8 +41,14 @@
 			}
 		],
 		"devdoc": {
+			"details": "Interface for any contract that wants to support safeTransfers from ERC721 asset contracts.",
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"onERC721Received(address,address,uint256,bytes)": {
+					"details": "Whenever an {IERC721} `tokenId` token is transferred to this contract via {IERC721-safeTransferFrom} by `operator` from `from`, this function is called. It must return its Solidity selector to confirm the token transfer. If any other value is returned or the interface is not implemented by the recipient, the transfer will be reverted. The selector can be obtained in Solidity with `IERC721Receiver.onERC721Received.selector`."
+				}
+			},
+			"title": "ERC721 token receiver interface",
 			"version": 1
 		},
 		"userdoc": {
@@ -53,7 +59,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"staking.sol": "IERC721Receiver"
+			"ERC721A_flat.sol": "IERC721Receiver"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -67,12 +73,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"staking.sol": {
-			"keccak256": "0x1bbb1cd907d4b86e8f94e48dad513fef6e4efd14daa18fa4ab391e24a009145f",
-			"license": "MIT",
+		"ERC721A_flat.sol": {
+			"keccak256": "0x84ef07cd3976fd0ddbfea3bb5eba5bd8f288f4e857882ec82e2e38c31817544d",
 			"urls": [
-				"bzz-raw://63b959aa0843a6ebc8f26a08a597639435a0705d8381715583bd92f8d39fa51e",
-				"dweb:/ipfs/QmVPKgJXzu5zKceXu8wAJ3fB9dBCQB9DTKHTmhwFB7MD12"
+				"bzz-raw://a012cdab53328e2873dc13f15ac360a4f67386d40817436b4597f95a523011b3",
+				"dweb:/ipfs/QmPmV6yESMmSB3SgxydWDeBBeL72HxnvX1kUNWQY8PLaeH"
 			]
 		}
 	},
