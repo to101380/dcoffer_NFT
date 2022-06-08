@@ -661,11 +661,11 @@
 			]
 		},
 		"Dcoffer/ERC721A/ERC721A.sol": {
-			"keccak256": "0x0e9a20be69de9e08b97fe450763156c72f95bbec9aa5fc2749756d9d67aedde4",
+			"keccak256": "0xbbea3d40c0e2c48b8c05164ab4d10adabf593a50531b46516e581c5b5de7fc2f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ab6573d1ce926c2494974b5296a88dfa8d96df109dcad459e44e4b88594d5843",
-				"dweb:/ipfs/QmX2rgnCzjCBccYusjffKov3ZM4JzcuMqTduwLwytjtKm9"
+				"bzz-raw://d1c633c2aab94c26f6729c7618f0d71942e54d63549c87a4f88830bfc46dbc5d",
+				"dweb:/ipfs/QmeTrqFMxKh1MHF1qJSFV6mm2WKXqr2UrNJAYMMkEkcpc4"
 			]
 		},
 		"Dcoffer/ERC721A/IERC721A.sol": {
@@ -685,11 +685,11 @@
 			]
 		},
 		"Dcoffer/opensea_test.sol": {
-			"keccak256": "0x9b424075081477d449349a92906b297f737fb31e8cc6755f92dff04fda064fc9",
+			"keccak256": "0x8793156832efd044e03088149953c57024bb758a8c9a505d28169e507cf0f423",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://454c094d81873d9f212ec9fcdb4705d7fee0ea5bcae21c4af44e83ef730cd7ab",
-				"dweb:/ipfs/QmToUSciidzZ8d8w1VoB8sCLn6XTudafC9Wb33PheWRcCs"
+				"bzz-raw://b20b3a3767e34e778270b2b73e1391bdc060c665786a7cd1aec320d144004f9c",
+				"dweb:/ipfs/QmREnGyWyHGTwZm5oqceLee6LuSPLBKZMSXhh4bgwJ7kRa"
 			]
 		}
 	},

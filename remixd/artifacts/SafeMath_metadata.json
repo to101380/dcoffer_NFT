@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ERC721A_flat.sol": "SafeMath"
+			"opensea_test_flat.sol": "SafeMath"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,11 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"ERC721A_flat.sol": {
-			"keccak256": "0x84ef07cd3976fd0ddbfea3bb5eba5bd8f288f4e857882ec82e2e38c31817544d",
+		"opensea_test_flat.sol": {
+			"keccak256": "0x08e94153c2cf9fc5e86f84040b95d7b840dbfa2a17129cf899fca55eec46c8d9",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://a012cdab53328e2873dc13f15ac360a4f67386d40817436b4597f95a523011b3",
-				"dweb:/ipfs/QmPmV6yESMmSB3SgxydWDeBBeL72HxnvX1kUNWQY8PLaeH"
+				"bzz-raw://736407cef21ece711040c3623f8f22bbde0108c8d71cd079d00fac0e88d392fa",
+				"dweb:/ipfs/QmYssGV1F1y5Gbg8f8qdNVc9KW6q3fE9ebgGmo9MknfyhU"
 			]
 		}
 	},

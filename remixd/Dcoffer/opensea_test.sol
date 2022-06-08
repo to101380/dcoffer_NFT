@@ -10,15 +10,10 @@ contract Dcoffer is ERC721A {
 
 
 
-  constructor()ERC721A("Dcoffer", "Dcoffer",10000) {
+  constructor()ERC721A("Dcoffer", "Dcoffer") {
     
   }
 
-
-
-  mapping(uint256 => mapping(uint256 => uint256))private info;
-
-  
  
   function mint(uint256 quantity) external { 
     _safeMint(msg.sender, quantity);

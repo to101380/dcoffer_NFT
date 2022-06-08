@@ -127,11 +127,11 @@
 			]
 		},
 		"Dcoffer/ERC721A/ERC721A.sol": {
-			"keccak256": "0xea1e0a4e6af50e8640a86b518c80c9b7bf66b5ffe475fea9f0529b235c04c33b",
+			"keccak256": "0x0e9a20be69de9e08b97fe450763156c72f95bbec9aa5fc2749756d9d67aedde4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://366d56d8510c8ee1d98afcbc741230205534413e04f5abe7946fa31c8b45aafc",
-				"dweb:/ipfs/QmT4rSijpJPvtHB9WdQnHkiAf9XFTwk7TLX1spsu3vtGQq"
+				"bzz-raw://ab6573d1ce926c2494974b5296a88dfa8d96df109dcad459e44e4b88594d5843",
+				"dweb:/ipfs/QmX2rgnCzjCBccYusjffKov3ZM4JzcuMqTduwLwytjtKm9"
 			]
 		},
 		"Dcoffer/ERC721A/IERC721A.sol": {

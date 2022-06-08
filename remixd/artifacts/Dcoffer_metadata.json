@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.14+commit.80d49f37"
 	},
 	"language": "Solidity",
 	"output": {
@@ -172,30 +172,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "paramA",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "paramB",
-						"type": "uint256"
-					}
-				],
-				"name": "ViewInfo",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "address",
 						"name": "to",
 						"type": "address"
@@ -228,19 +204,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					}
-				],
-				"name": "burn",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -296,7 +259,7 @@
 				],
 				"name": "mint",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -396,29 +359,6 @@
 					}
 				],
 				"name": "setApprovalForAll",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "paramA",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "paramB",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "paramC",
-						"type": "uint256"
-					}
-				],
-				"name": "setInfo",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -634,7 +574,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Dcoffer_flat.sol": "Dcoffer"
+			"opensea_test_flat.sol": "Dcoffer"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -648,12 +588,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Dcoffer_flat.sol": {
-			"keccak256": "0xdd518e18705fca21c8aa91eaf27d1c1919d938aa224ae255373302153f177156",
+		"opensea_test_flat.sol": {
+			"keccak256": "0x08e94153c2cf9fc5e86f84040b95d7b840dbfa2a17129cf899fca55eec46c8d9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://309e7496d44b78227b397d8967e68cd032380346a72d06c3a5dae0cd625a0a20",
-				"dweb:/ipfs/QmeEejUd4CUQRhKuLskxAmXk8qoviVy8WJ5JP7ZPJTmFwq"
+				"bzz-raw://736407cef21ece711040c3623f8f22bbde0108c8d71cd079d00fac0e88d392fa",
+				"dweb:/ipfs/QmYssGV1F1y5Gbg8f8qdNVc9KW6q3fE9ebgGmo9MknfyhU"
 			]
 		}
 	},
